@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,6 +26,8 @@ SECRET_KEY = 'django-insecure-_)ipcpq7@!3)nooov*m(px#exy+1&(%_0xz!7&76zbtfb#9vk+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+load_dotenv()
 
 ALLOWED_HOSTS = []
 
@@ -78,9 +82,9 @@ WSGI_APPLICATION = 'Lorby.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME' : 'Lorby',
-        'USER' : 'postgres',
-        'PASSWORD' : 'heyoSSam777',
+        'NAME' : os.environ.get('DB_NAME'),
+        'USER' : os.environ.get('DB_USER'),
+        'PASSWORD' : os.environ.get('DB_PASS'),
         'HOST' : 'localhost',
         'POST' : '5432'
     }
