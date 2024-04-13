@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'register'
+    'rest_framework.authtoken',
+    'register',
+    'login',
+
 ]
 
 MIDDLEWARE = [
@@ -80,7 +83,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME' : 'Lorby',
         'USER' : 'postgres',
-        'PASSWORD' : 'heyoSSam777',
+        'PASSWORD' : 'rootroot',
         'HOST' : 'localhost',
         'POST' : '5432'
     }
