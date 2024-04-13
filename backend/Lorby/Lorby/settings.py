@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'register'
 ]
 
 MIDDLEWARE = [
@@ -77,11 +78,11 @@ WSGI_APPLICATION = 'Lorby.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'Name' : 'railway',
-        'User' : 'postgres',
-        'Password' : 'QOpLNUvlaZvZbSDMBGAKbsjQQuXwUlip',
-        'Host' : 'viaduct.proxy.rlwy.net',
-        'Port' : '27001'
+        'NAME' : 'Lorby',
+        'USER' : 'postgres',
+        'PASSWORD' : 'rootroot',
+        'HOST' : 'localhost',
+        'POST' : '5432'
     }
 }
 
