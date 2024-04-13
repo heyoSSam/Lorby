@@ -1,10 +1,9 @@
 <template>
-    <div>
-        <button class="">
+
+        <button class="bg-black text-white py-3 px-4 rounded-xl w-full">
             <slot>
             </slot>
         </button>
-    </div>
 </template>
 <script>
 export default {

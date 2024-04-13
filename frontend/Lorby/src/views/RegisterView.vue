@@ -1,18 +1,17 @@
 <template lang="">
     <div class="grid grid-cols-2 h-screen">
         <ImageBox/>
-
-        <LoginBox/>
-
+        
+        <RegisterBox/>
     </div>
 </template>
 <script>
-import LoginBox from '@/components/LoginBox.vue'
 import ImageBox from '@/components/ImageBox.vue'
+import RegisterBox from '@/components/RegisterBox.vue'
 export default {
     components:{
-        LoginBox,
         ImageBox,
+        RegisterBox
     }
 }
 </script>

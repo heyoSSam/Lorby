@@ -1,6 +1,7 @@
 #BACKEND
 
 **/venv
+*.env
 
 #FRONTEND
 

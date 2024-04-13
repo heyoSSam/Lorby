@@ -3,8 +3,9 @@
         <input 
         :placeholder="pholder" 
         :value="modelValue"
+        @input="$emit('update:modelValue', $event.target.value)" 
         type="text"
-        class=""> 
+        class="py-3 px-4 rounded-xl bg-silver w-full border-none focus:outline-gray-200"> 
     </div>
 </template>
 <script>
