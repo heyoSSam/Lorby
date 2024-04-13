@@ -12,6 +12,9 @@ def register(request):
 
         if request.method == 'POST':
             user = request.data
+            print(user)
+            serializer = UserSerializer(user)
+            print(serializer.data)
             password = str.encode(user['password'])
             salt = bcrypt.gensalt()
             user['password'] = bcrypt.hashpw(password, salt)

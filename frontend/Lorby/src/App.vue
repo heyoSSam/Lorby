@@ -4,5 +4,10 @@ import LoginView from '@/views/LoginView.vue'
 </script>
 
 <template>
-  <RouterView />
+  <Suspense>
+    <template #default>
+      <RouterView />
+    </template>
+  </Suspense>
 </template>
+
